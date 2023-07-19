@@ -9,8 +9,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .ts,.js,.vue .",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "commit": "git-cz"
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
@@ -46,10 +45,5 @@
       "eslint --cache --fix",
       "git add"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
   }
 }
