@@ -6,7 +6,13 @@ import { createRuntimeConfig } from './build'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/i18n', '@pinia-plugin-persistedstate/nuxt'],
+  modules: [
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/i18n',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@hypernym/nuxt-gsap'
+  ],
   // vant: {
   //   lazyload: true,
   //   importStyle: true

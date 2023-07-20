@@ -9,6 +9,10 @@
 <script setup lang="ts">
 import { useExample } from '../store/use-expmale'
 const { increment, state } = useExample()
+const { $gsap } = useNuxtApp()
+onMounted(() => {
+  $gsap.to('.title', { x: 200 })
+})
 // const { data, pending, error, refresh } = await useFetch('http://localhost:3001/api')
 // console.log(data)
 
