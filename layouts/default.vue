@@ -1,12 +1,9 @@
 <template>
   <main>
+    <Header />
     <slot />
-    <!-- <Footer /> -->
-    <div class="footer">Footer</div>
+    <Footer />
   </main>
-  <!-- <div>
-    header
-  </div> -->
 </template>
 <script setup lang="ts"></script>
 <style scope>
